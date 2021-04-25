@@ -43,7 +43,7 @@ void saveData(Product p[], int count){
 	
 	for(int i =0; i<count; i++){
 		if(p[i].weight == -1)continue;
-		fprintf(fp," %s  %d   %d\n", p[i].name, p[i].weight, p[i].price);
+		fprintf(fp,"%s %d %d\n", p[i].name, p[i].weight, p[i].price);
 	}
 	
 	fclose(fp);
